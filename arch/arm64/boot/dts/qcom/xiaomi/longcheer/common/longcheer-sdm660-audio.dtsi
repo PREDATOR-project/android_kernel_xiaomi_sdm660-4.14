@@ -53,6 +53,12 @@
 	};
 };
 
+&clock_audio_native {
+	/delete-property/ pinctrl-names;
+	/delete-property/ pinctrl-0;
+	/delete-property/ pinctrl-1;
+};
+
 /* diff with sdm660-audio.dtsi */
 &wcd934x_cdc {
 	/delete-node/ msm_cdc_pinctrl_usbc_audio_en1;
