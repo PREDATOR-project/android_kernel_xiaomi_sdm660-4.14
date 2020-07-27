@@ -673,7 +673,7 @@ keep_lcd_and_tp_reset:
 		if(enable_gesture_mode)
 			printk("gesture mode keep reset gpio to high.\n");
 #elif defined(CONFIG_MACH_XIAOMI_WHYRED)
-		if(enable_gesture_mode || synaptics_gesture_func_on)
+		if(synaptics_gesture_func_on)
 			printk("gesture mode keep reset gpio to high.\n");
 		else
 			gpio_set_value((ctrl_pdata->rst_gpio), 0);
